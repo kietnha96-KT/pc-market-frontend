@@ -1,0 +1,30 @@
+.mainpage-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0 15px 0;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-box h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.info-box i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7c4dff, #5e35b1);
+    color: white;
+    font-size: 22px;
+    box-shadow:
+        0 6px 14px rgba(94, 53, 177, 0.25);
+}

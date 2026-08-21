@@ -1,0 +1,212 @@
+/* Layout chính */
+.admin-categories-container {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Các khung chứa (Panel) */
+.admin-panel {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #334155;
+}
+
+.panel-title.editing {
+  color: #d97706; /* Màu cam khi ở trạng thái sửa */
+}
+
+/* Form Styles */
+.category-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  box-sizing: border-box;
+}
+
+.form-input.slug {
+  background: #f8fafc;
+}
+
+.form-checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.form-checkbox-label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Buttons trong Form */
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-submit {
+  flex: 1;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-submit.add {
+  background: #2563eb;
+}
+
+.btn-submit.add:hover {
+  background: #1d4ed8;
+}
+
+.btn-submit.edit {
+  background: #d97706;
+}
+
+.btn-submit.edit:hover {
+  background: #b45309;
+}
+
+.btn-submit:disabled {
+  background: #94a3b8 !important;
+  cursor: not-allowed;
+}
+
+.btn-cancel {
+  padding: 10px 15px;
+  background: #cbd5e1;
+  color: #334155;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-cancel:hover {
+  background: #94a3b8;
+}
+
+/* Loading State */
+.loading-state {
+  text-align: center;
+  padding: 30px;
+  color: #64748b;
+}
+
+/* Bảng Danh mục */
+.categories-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.categories-table thead tr {
+  background: #f8fafc;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.categories-table th {
+  padding: 10px;
+  color: #475569;
+}
+
+.categories-table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.categories-table tbody tr.editing-row {
+  background-color: #fef3c7; /* Highlight dòng đang sửa */
+}
+
+.categories-table td {
+  padding: 10px;
+}
+
+.category-name.parent {
+  font-weight: bold;
+}
+
+.tree-line {
+  color: #94a3b8;
+  margin-right: 6px;
+}
+
+/* Badges (Trạng thái) */
+.badge-status {
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.badge-status.active {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.badge-status.inactive {
+  background-color: #f1f5f9;
+  color: #64748b;
+}
+
+/* Các nút Hành động */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-edit-sm {
+  padding: 4px 8px;
+  background: #eab308;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btn-edit-sm:hover {
+  background: #ca8a04;
+}
+
+.btn-delete-sm {
+  padding: 4px 8px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btn-delete-sm:hover {
+  background: #dc2626;
+}

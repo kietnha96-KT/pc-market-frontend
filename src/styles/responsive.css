@@ -1,0 +1,28 @@
+/* Thiết kế ưu tiên desktop first - 1440 */
+@media screen and (max-width: 1440px) {
+    .header-nav3 p{
+        font-size: 80%;
+    }
+    
+    .logo {
+        font-size: 60px;
+    }
+    
+    .fixed-nav p{
+        font-size: 80%;
+    }
+
+    .showroom-title div{
+        font-size: 20px;
+    }
+
+    .footer-policy{
+        gap: 90px
+    }
+
+    .product-box-detail {
+        width: 250px;
+        font-size: 70%;
+    }
+
+}

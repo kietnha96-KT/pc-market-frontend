@@ -1,0 +1,139 @@
+/* Thanh menu dọc và ngang */
+.menu {
+    position: relative;
+    font-weight: bold;
+    font-size: 150%;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.box a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+    padding: 0;
+}
+
+.box i {
+    color: white;
+    box-shadow:
+        0 6px 14px rgba(94, 53, 177, 0.25);
+}
+
+.box:hover i {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    color: red;
+}
+
+.menu>li {
+    padding-top: 5px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgba(10, 10, 93, 0.84);
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.menu-doc {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.menu-doc a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+    padding: 0;
+}
+
+.menu-doc>li {
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 80%;
+}
+
+.menu-doc>li:hover {
+    background-color: #dddddd;
+    color: red;
+}
+
+.menu li:hover .menu-doc {
+    display: block;
+}
+
+.menu-ngang {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 70vw;
+    min-height: 100%;
+    background-color: white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    display: none;
+}
+
+.menu-doc li:hover .menu-ngang {
+    display: block;
+}
+
+/* Các mục chi tiết trong menu ngang */
+.box-menu {
+    display: flex;
+    padding: 15px 0 0 15px;
+    gap: 10px;
+}
+
+.box-menu>ul>li {
+    list-style: none;
+    padding: 0;
+    color: black;
+    margin: 5px;
+    padding-bottom: 5px;
+    font-size: 80%;
+}
+
+.box-menu>ul>li>p {
+    margin: 0;
+    padding: 0;
+    color: red;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.box-menu li:hover {
+    color: red;
+}
+
+.box-item {
+    flex: 0 0 calc((100% - 45px) / 4);
+    margin: 0;
+    padding: 0;
+}

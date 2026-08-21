@@ -1,0 +1,33 @@
+.footer-logo {
+    display: block;
+    text-align: center;
+}
+
+.footer-logo i {
+    font-size: 70px;
+    padding: 20px;
+    border-radius: 50%;
+    background:
+        linear-gradient(135deg, #ff4d6d, #0077ff);
+    color: white;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+}
+
+.footer-logo div:nth-child(2) {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.footer-logo div:nth-child(3) {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer-logo span {
+    color: #008cff;
+}

@@ -1,0 +1,37 @@
+.fixed-button{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 35%;
+    right: 3px;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.fixed-button img{
+    height: 45px;
+}
+
+.fixed-button img:hover{
+    transform: translateX(-10px);
+    transition: 0.5s ease;
+}
+
+.scroll-top{
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #ff2d2d, #ff0000);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.scroll-top:hover {
+    transform: translateY(-10px) scale(1.08);
+    box-shadow:
+        0 12px 25px rgba(255, 0, 0, 0.55),
+        inset 0 2px 6px rgba(255,255,255,0.35);
+    transition: 0.5s ease;
+}

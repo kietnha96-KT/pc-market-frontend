@@ -1,0 +1,195 @@
+/* Thanh nav đầu trang */
+.header-topcontainer {
+    /* max-width: 1600px; */
+    background-color: rgba(10, 10, 93, 0.84);
+    color: white;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header-nav1 {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header-nav1 li {
+    display: block;
+    position: relative;
+    color: #f1f1f1;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.header-nav1 a {
+    color: inherit;   
+    text-decoration: none;
+}
+
+.header-nav1 li:hover {
+    background-color: #dddddd;
+    color: black;
+}
+
+.header-nav1 button{
+    background: none;
+    border: none;
+    color: inherit;
+    color: pointer;
+    font: inherit;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu-nav1{
+    position: relative;
+}
+
+.menu-doc-nav1{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.menu-doc-nav1 li{
+    background-color: white;
+    color: black;
+}
+
+.menu-doc-nav1 li:hover{
+    color: red;
+}
+
+
+.menu-nav1:hover .menu-doc-nav1{
+    display: block;
+}
+
+.header-bottom {
+    background-color: #4f46e5;
+}
+
+.header-bottomcontainer {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Thanh nav ở giữa, gồm logo, ô search, giỏ hàng */
+.header-nav2 {
+    display: flex;
+    padding: 50px;
+    gap: 30px;
+    align-items: center;
+    height: 50px;
+}
+
+.logo {
+    text-align: center;
+    color: white;
+    flex: 0.5;
+    font-size: 80px;
+    text-decoration: none;
+}
+
+.search {
+    flex: 1.5;
+    display: flex;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.search select {
+    flex: 0.5;
+}
+
+.search input {
+    flex: 2;
+}
+
+.search button {
+    background-color: rgba(10, 10, 93, 0.84);
+    width: 50px;
+    font-size: 20px;
+}
+
+/* Phần hotline + xây dựng + giỏ hàng */
+.right-box {
+    flex: 1;
+    display: flex;
+    border-radius: 40px;
+    background-color: rgba(25, 10, 105, 0.685);
+    gap: 30px;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+
+.right-boxdetail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: white;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.right-boxdetail i {
+    height: 35px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7c4dff, #5e35b1);
+    color: white;
+    
+    box-shadow:
+        0 6px 14px rgba(94, 53, 177, 0.25);
+}
+
+.right-boxdetail a {
+    color: white;
+    text-decoration: none;
+}
+
+.right-boxdetail:hover i {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.tick-cart {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background-Color: #d91c1c;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 11px;
+    font-Weight: bold;
+    line-Height: 1;
+}
+
+.header-nav3 {
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1;
+    position: relative;
+}
+

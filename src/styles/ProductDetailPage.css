@@ -1,0 +1,148 @@
+.product-detail-wrapper {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-detail-loading,
+.product-detail-error {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+
+.product-detail-content {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.detail-left-col {
+    flex: 1;
+    min-width: 350px;
+    max-width: 500px;
+}
+
+.detail-main-slider {
+    --swiper-navigation-color: #000;
+    --swiper-pagination-color: #000;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.detail-main-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    aspect-ratio: 1 / 1;
+}
+
+.detail-main-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.detail-thumb-slider {
+    margin-top: 10px;
+}
+
+.detail-thumb-slide {
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    aspect-ratio: 1 / 1;
+}
+
+.detail-thumb-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail-right-col {
+    flex: 1;
+    min-width: 300px;
+}
+
+.detail-original-price {
+    text-decoration: line-through;
+    margin-left: 15px;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.detail-discount-badge {
+    margin-left: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+.detail-category-brand {
+    text-transform: uppercase;
+    color: #888;
+    font-size: 14px;
+}
+
+.detail-title {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.detail-price-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.detail-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d91c1c;
+}
+
+.detail-discount-badge {
+    background: #ffebee;
+    color: #d91c1c;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.detail-description {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.detail-policies {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    margin: 20px 0;
+}
+
+.detail-policies p {
+    margin: 5px 0;
+}
+
+.detail-add-btn {
+    padding: 15px 30px;
+    background-color: #4f46e5;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.detail-add-btn:hover {
+    background-color: #333;
+}

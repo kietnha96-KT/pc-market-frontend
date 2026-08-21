@@ -1,0 +1,38 @@
+.box-wrap {
+    display: block;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    box-shadow:
+        0 6px 16px rgba(0, 0, 0, 0.12),
+        0 2px 6px rgba(0, 0, 0, 0.08);
+    font-size: 105%;
+}
+
+.box-support {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 20px;
+    cursor: pointer;
+}
+
+.box-support-detail {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition:
+        max-height 0.3s ease,
+        opacity 0.5s ease;
+}
+
+.box-wrap.opendetail .box-support-detail {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.box-support-detail div {
+    padding: 10px 10px 10px 20px;
+}
+
+.box-wrap.opendetail .box-support div {
+    font-weight: bold;
+}

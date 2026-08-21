@@ -1,0 +1,38 @@
+.footer-policy{
+    display: flex;
+    justify-content: flex-start;
+    gap: 200px; 
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed rgb(207, 199, 199);
+}
+
+.policy-box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.policy-box div{
+    cursor: pointer;
+}
+
+.policy-title {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.policy-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 2px;
+    background: blue;
+}
+
+.policy-box div:hover{
+    color: red;
+}

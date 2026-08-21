@@ -1,0 +1,62 @@
+.fixed-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Vì các element xuất hiện sau trong html, đè lại fixed-nav nên đặt z-index cao hơn */
+    z-index: 1000;
+    background-color: #4f46e5;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    box-sizing: border-box;
+}
+
+.fixed-nav.show {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

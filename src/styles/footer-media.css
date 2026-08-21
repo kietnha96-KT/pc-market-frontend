@@ -1,0 +1,25 @@
+.footer-media{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 5px;
+}
+
+.media-left{
+    display: flex;
+    gap: 10px;
+}
+
+.media-left img{
+    height: 45px;
+}
+
+.media-right{
+    flex: 1;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.media-right img{
+    height: 40px;
+}

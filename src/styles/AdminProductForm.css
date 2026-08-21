@@ -1,0 +1,246 @@
+.admin-product-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.admin-product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.admin-product-header h2 {
+    margin: 0;
+    color: #1e293b;
+}
+
+.btn-back {
+    cursor: pointer;
+    padding: 8px 16px;
+    background-color: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    color: #334155;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-back:hover {
+    background-color: #e2e8f0;
+}
+
+.admin-product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #334155;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    border-color: #2563eb;
+}
+
+.form-control.readonly {
+    background-color: #f3f4f6;
+    color: #ef4444;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+.opt-bold {
+    font-weight: bold;
+}
+
+.upload-section {
+    border: 1px dashed #cbd5e1;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8fafc;
+}
+
+.upload-label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #334155;
+}
+
+.upload-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.upload-input {
+    padding: 8px 0;
+    width: 100%;
+}
+
+.uploading-text {
+    color: #2563eb;
+    font-size: 13px;
+    margin-top: 5px;
+    display: block;
+}
+
+.uploading-text-inline {
+    color: #2563eb;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.thumbnail-preview-box {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.thumbnail-url-input {
+    width: 100%;
+    padding: 8px;
+    background-color: #f3f4f6;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #64748b;
+    box-sizing: border-box;
+}
+
+.img-preview {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.gallery-upload-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gallery-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.btn-remove-img {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.btn-remove-img:hover {
+    background-color: #dc2626;
+}
+
+.checkbox-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.checkbox-label {
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+    align-items: center;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-submit {
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover:not(:disabled) {
+    background-color: #1d4ed8;
+}
+
+.btn-submit:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+}
+
+.loading-container {
+    padding: 50px;
+    text-align: center;
+    color: #475569;
+    font-size: 16px;
+}
